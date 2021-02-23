@@ -5,7 +5,7 @@ metadata:
 spec:
   steps:
   - name: demo-task-cont
-    image: ubunt
+    image: ubuntu
     command:
       - echo
     args:
