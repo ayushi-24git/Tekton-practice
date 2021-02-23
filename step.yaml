@@ -1,0 +1,12 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata: 
+  name: demo-task
+spec:
+  steps:
+  - name: demo-task-cont
+    image: golang:1.12.0-alpine3.9
+    command:
+      - echo
+    args:
+      - "Hello World!"
